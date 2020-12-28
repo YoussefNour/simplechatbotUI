@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Almerce</title>
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body onload="sendmessage()">
+    <div class="infobar">
+        <img class="messageprofile" src="/images/robot.jpg">
+        <h2>Almerce</h2>
+    </div>
+    <div id="chat" class="mainbody"></div>
+    <div class="controls">
+      <button id="sendbutton" onclick="receivemessage()" class="sendbutton">
+        <i class="material-icons">send</i>
+      </button>
+      <input id="message" class="messageinput" placeholder="type..." />
+    </div>
+    <script src="/chatbot.js"></script>
+  </body>
+</html>
